@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Button } from "./components/Button/Button"
 import { Card } from "./components/Card/Card"
 import { Header } from "./components/Header/Header"
+import { Forecast } from "./components/Forecast/Forecast"
 
 function App() {
   const userInfo = {
@@ -94,6 +95,9 @@ function App() {
       ))}
 
       <Button>Salvar</Button>
+
+      <Forecast day="19/08/2024" min={14} max={33} condition="Limpo" />
+      <Forecast day="20/08/2024" min={15} max={35} condition="Limpo" large/>
     </>
   )
 }
